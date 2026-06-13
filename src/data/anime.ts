@@ -35,4 +35,4 @@ const localAnimeList: AnimeItem[] = [
 	},
 ];
 
-export default localAnimeList;
+export const getAnimeList = () => getBangumiData();

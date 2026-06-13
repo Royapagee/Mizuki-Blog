@@ -138,6 +138,7 @@ enum I18nKey {
 	skillsBackend = "skillsBackend",
 	skillsDatabase = "skillsDatabase",
 	skillsTools = "skillsTools",
+	skillsArt = "skillsArt",
 	skillsOther = "skillsOther",
 	skillLevel = "skillLevel",
 	skillLevelBeginner = "skillLevelBeginner",

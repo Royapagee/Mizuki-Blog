@@ -60,6 +60,7 @@ interface Props {
 			backend: number;
 			database: number;
 			tools: number;
+			art: number;
 			other: number;
 		};
 	};
@@ -75,15 +76,16 @@ const { stats, totalExperience } = Astro.props;
 const levelColors = {
 	expert: "#EF4444", // red-500
 	advanced: "#F97316", // orange-500
-	intermediate: "#EAB308", // yellow-500
-	beginner: "#22C55E", // green-500
+	intermediate: "#Ecc94b", // yellow-500
+	beginner: "#00d100", //green-500
 };
 
 const categoryColors = {
 	frontend: "#3B82F6", // blue-500
-	backend: "#8B5CF6", // violet-500
-	database: "#10B981", // emerald-500
-	tools: "#F59E0B", // amber-500
+	backend: "#8B5CF6", // purple-500
+	database: "#00d100", // green-500
+	tools: "#F97316", // orange-500
+	art: "#E91E63", // pink-600 - better for art category
 	other: "#EC4899", // pink-500
 };
 
@@ -132,6 +134,11 @@ const categoryData = [
 		name: i18n(I18nKey.skillsTools),
 		value: stats.byCategory.tools,
 		color: categoryColors.tools,
+	},
+	{
+		name: i18n(I18nKey.skillsArt),
+		value: stats.byCategory.art,
+		color: categoryColors.art,
 	},
 	{
 		name: i18n(I18nKey.skillsOther),

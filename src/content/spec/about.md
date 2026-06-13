@@ -1,5 +1,6 @@
+![一张立绘](src/content/spec/img/FullCG.png)
 
-### 🌟 我是谁？
+## 🌟 我是谁？
 - 你好，我是 **罗伊** ，一名来自贵州，现在在山东就读大学的一名学生。
 - 目前主要学习软件工程专业相关内容，同时也在自行探索有关人工智能的东西。
 
@@ -11,13 +12,20 @@
 
 ### 🎮 我平常玩什么？
 - **东方Project** - 此生无悔入东方，来世愿生幻想乡！幻想为界，弹幕作誓。我心即东方，永世不灭。
-- **Minecraft** - 方块人方块魂！世界皆由方块而起，未来亦由方块而生，手握像素，心向无限。
-- **蔚蓝档案** - 国际服老Sensei，早些时候也是被最终章剧情给打动得彻夜难眠的，每一个学生都是为师的心头肉哇！
-- **亚托莉(Gal)** - Ciallo～(∠・ω< )⌒★ 是的如你所见，这个网站有很多的亚托莉。<del>我可是高性能的嘛！</del>
+- **Minecraft** - 方块人方块魂！世界皆由方块而起，未来亦由方块而生，手握像素，心向无限。我也开设了服务器，欢迎来玩！由此进入 [QQ小群](https://qm.qq.com/q/sk2wspXi6c) 上线游玩～
+- **音游** - 每天一杯奶，强壮音游人！主要玩 **舞萌** ！<del>唉wmc</del> ，其次会玩 **节奏医生** ，对于 **喵斯快跑** 和 **Cytoid** 也都有所接触。虽然还是很菜……
+- **蔚蓝档案** - 国际服老Sensei，坚信着和朋友的日常都是奇迹，希望你也可以同我创造回忆和奇迹 ！
+- **Galgame** - Ciallo～(∠・ω< )⌒★ 首先，这个网站有很多的亚托莉。<del>我可是高性能的嘛！</del> 其次，我也确实玩Gal，但正如前文所述，我涉猎并不广，所以还请见谅。
 - 来 [Steam](https://steamcommunity.com/id/Royapagee/) 了解更多……
+
+### 🎮 都玩了什么？
+- 还在施工……
+
 ---
+- 个人摄影作品请移步 [相册](/albums/) ， **二次元收藏** 和 **追番** 可移步 [设备&宅物](/devices/) 和 [追番&追剧](/anime/)，想看（视奸）我的日常生活欢迎来看我的 [日记](/diary/) ~ ~
 - 感谢你能看到这里，欢迎来到我的个人 [QQ小群](https://qm.qq.com/q/sk2wspXi6c) ~！
 - 期待你的光临！愿我们一起共同进步！
 ---
-该网站使用 **Astro** ，并应用了 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题框架.
+该网站使用 **Astro** ，并应用了[fuwari](https://github.com/saicaca/fuwari/tree/main) 与 [Mizuki](https://github.com/matsuzaka-yuki/mizuki) 主题框架.
+::github{repo="saicaca/fuwari"}
 ::github{repo="matsuzaka-yuki/Mizuki"}

@@ -3,7 +3,7 @@ import type { Translation } from "../translation";
 
 export const zh_CN: Translation = {
 	[Key.home]: "主页",
-	[Key.about]: "关于我们",
+	[Key.about]: "关于我",
 	[Key.archive]: "归档",
 	[Key.search]: "搜索",
 	[Key.other]: "其他",
@@ -103,8 +103,8 @@ export const zh_CN: Translation = {
 	[Key.albumsPhotosCount]: "张照片",
 
 	// 设备页面
-	[Key.devices]: "我的设备",
-	[Key.devicesSubtitle]: "这里展示了我日常使用的各类设备",
+	[Key.devices]: "我的设备&物件",
+	[Key.devicesSubtitle]: "这里展示了我日常的各种东西",
 
 	// 项目展示页面
 	[Key.projects]: "项目展示",
@@ -139,7 +139,8 @@ export const zh_CN: Translation = {
 	[Key.skillsFrontend]: "前端开发",
 	[Key.skillsBackend]: "后端开发",
 	[Key.skillsDatabase]: "数据库",
-	[Key.skillsTools]: "开发工具",
+	[Key.skillsTools]: "工具类",
+	[Key.skillsArt]: "艺术类",
 	[Key.skillsOther]: "其他技能",
 	[Key.skillLevel]: "熟练度",
 	[Key.skillLevelBeginner]: "初学者",

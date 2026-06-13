@@ -20,21 +20,51 @@ export interface Project {
 
 export const projectsData: Project[] = [
 	{
-		id: "mizuki-blog",
-		title: "Mizuki Blog Theme",
+		id: "my-blog",
+		title: "My Blog Based on Mizuki",
 		description:
-			"Modern blog theme developed based on the Astro framework, supporting multilingual, dark mode, and responsive design features.",
+			"基于 Mizuki 进行二次主题修改的博客，正呈现在你的面前。",
 		image: "",
 		category: "web",
 		techStack: ["Astro", "TypeScript", "Tailwind CSS", "Svelte"],
 		status: "completed",
 		liveDemo: "https://blog.example.com",
-		sourceCode: "https://github.com/example/mizuki", // 更改为GitHub链接
+		sourceCode: "https://github.com/Royapagee/MyBlogByMizuki", // 更改为GitHub链接
 		visitUrl: "https://blog.example.com", // 添加前往项目链接
-		startDate: "2024-01-01",
-		endDate: "2024-06-01",
+		startDate: "2025-12-05",
+		endDate: "2025-12-10",
 		featured: true,
-		tags: ["Blog", "Theme", "Open Source"],
+		tags: ["博客", "主题", "开源"],
+	},
+	{
+		id: "atri-bot",
+		title: "亚托莉Bot",
+		description:
+			"基于 Napcat + Koishi + Chatluna 制作的QQ聊天机器人，提供群聊，长期记忆，图片理解，MC服务器查询，发言统计等功能。体验请前往个人小群",
+		image: "",
+		category: "web",
+		techStack: ["Napcat", "Koishi", "Javascript"],
+		status: "completed",
+		visitUrl: "https://qm.qq.com/q/8A1Y4c5WnY",
+		startDate: "2025-11-08",
+		endDate: "2025-11-08",
+		featured: true,
+		tags: ["AI", "亚托莉", "机器人"],
+	},
+	{
+		id: "atri-curtain",
+		title: "亚托莉主题宿舍床帘",
+		description:
+			"针对宿舍设计的以亚托莉和东方Project为主题的宿舍窗帘，为两面墙及吊顶式设计",
+		image: "",
+		category: "other",
+		techStack: ["Photoshop"],
+		status: "completed",
+		visitUrl: "https://www.bilibili.com/video/BV11pC3BEEX5/",
+		startDate: "2025-10-20",
+		endDate: "2025-11-25",
+		featured: true,
+		tags: ["东方Project", "亚托莉", "床帘", "定制"],
 	},
 ];
 

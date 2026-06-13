@@ -21,7 +21,7 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
 	title: "森罗幻想",
-	subtitle: "承载了某人幻想的小站",
+	subtitle: "承载了某人幻想的空间",
 	siteURL: "http://www.roysgensokyo.space", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-12-06", // 站点开始运行日期，用于站点统计组件计算运行天数
 
@@ -30,14 +30,14 @@ export const siteConfig: SiteConfig = {
 	lang: SITE_LANG,
 
 	themeColor: {
-		hue: 0, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
+		hue: 345, // 主题色的默认色相，范围从 0 到 360。例如：红色：0，青色：200，蓝绿色：250，粉色：345
 		fixed: true, // 对访问者隐藏主题色选择器
 	},
 
 	// 特色页面开关配置(关闭不在使用的页面有助于提升SEO,关闭后直接在顶部导航删除对应的页面就行)
 	featurePages: {
 		anime: true, // 番剧页面开关
-		diary: true, // 日记页面开关
+		diary: false, // 日记页面开关
 		friends: true, // 友链页面开关
 		projects: true, // 项目页面开关
 		skills: true, // 技能页面开关
@@ -51,15 +51,15 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "森罗幻想",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.png
-		icon: "assets/home/ATRI.png",
+		icon: "assets/home/ROY.png",
 	},
 
 	bangumi: {
-		userId: "sai", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
+		userId: "1187937", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
 	},
 
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
+		mode: "bangumi", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置
 	},
 
 	// 文章列表布局配置
@@ -93,18 +93,18 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				"/assets/desktop-banner/1.jpeg",
+				"/assets/desktop-banner/2.jpeg",
+				"/assets/desktop-banner/3.jpeg",
+				"/assets/desktop-banner/4.jpeg",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.jpg",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
-				"/assets/mobile-banner/5.webp",
-				"/assets/mobile-banner/6.webp",
+				"/assets/mobile-banner/1.jpeg",
+				"/assets/mobile-banner/2.jpeg",
+				"/assets/mobile-banner/3.jpeg",
+				"/assets/mobile-banner/4.jpeg",
+				"/assets/mobile-banner/5.jpeg",
+				"/assets/mobile-banner/6.jpeg",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -203,17 +203,18 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
+			"/assets/desktop-banner/1.jpeg",
+			"/assets/desktop-banner/2.jpeg",
+			"/assets/desktop-banner/3.jpeg",
+			"/assets/desktop-banner/4.jpeg",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
-			"/assets/mobile-banner/5.webp",
-			"/assets/mobile-banner/6.webp",
+			"/assets/mobile-banner/1.jpeg",
+			"/assets/mobile-banner/2.jpeg",
+			"/assets/mobile-banner/3.jpeg",
+			"/assets/mobile-banner/4.jpeg",
+			"/assets/mobile-banner/5.jpeg",
+	    	"/assets/mobile-banner/6.jpeg",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -232,14 +233,14 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接,并且支持多级菜单,3.1版本新加
 		{
-			name: "日记",
-			url: "/diary/",
-			icon: "material-symbols:book",
-		},
-		{
 			name: "相册",
 			url: "/albums/",
 			icon: "material-symbols:photo-library",
+		},
+		{
+			name: "追番",
+			url: "/anime/",
+			icon: "material-symbols:movie",
 		},
 		{
 			name: "友链",
@@ -248,25 +249,20 @@ export const navBarConfig: NavBarConfig = {
 			icon: "material-symbols:group",
 		},
 		{
-			name: "关于",
+			name: "关于我",
 			url: "/about/",
 			icon: "material-symbols:info",
 		},
 		{
-			name: "我的",
+			name: "了解我",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
+				
 				{
-					name: "追剧",
-					url: "/anime/",
-					icon: "material-symbols:movie",
-				},
-				{
-					name: "设备",
+					name: "设备&物件",
 					url: "/devices/",
-					icon: "material-symbols:devices",
-					external: false,
+					icon: "material-symbols:box-rounded",
 				},
 				{
 					name: "项目",
@@ -286,7 +282,7 @@ export const navBarConfig: NavBarConfig = {
 			],
 		},
 		{
-			name: "我在",
+			name: "我在哪",
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
@@ -303,7 +299,7 @@ export const navBarConfig: NavBarConfig = {
 					icon: "fa6-brands:bilibili",
 				},
 				{
-					name: "QQGroup",
+					name: "QQ群组",
 					url: "https://qm.qq.com/q/4fGJbOqOzC",
 					external: true,
 					icon: "material-symbols:group",
@@ -314,9 +310,9 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/atriavatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/royavatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "罗伊",
-	bio: "喜欢动漫与幻想乡的摄影与数码爱好者，平常动漫接触不多，但喜欢将喜欢的东西和各种各样的技术结合。",
+	bio: "喜欢动漫与幻想乡的摄影与数码爱好者，爱将喜欢的一切和各种各样的东西结合。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 40, // 打字速度（毫秒）
@@ -355,7 +351,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		lang: "en", // 设置 Twikoo 评论系统语言为英文
@@ -365,7 +361,7 @@ export const commentConfig: CommentConfig = {
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题
 	content:
-		"欢迎来到我的小天地 ✨ 在茫茫网海中与你相遇，已是妙不可言的缘分，随便逛逛吧，这里还有很多东西等你来发掘哦~~", // 公告内容
+		"欢迎来到我的小天地 ✨ ", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -377,16 +373,33 @@ export const announcementConfig: AnnouncementConfig = {
 
 export const musicPlayerConfig: MusicPlayerConfig = {
 	enable: true, // 启用音乐播放器功能
-	mode: "meting", // 音乐播放器模式，可选 "local" 或 "meting"
-	meting_api:
-		"https://www.bilibili.uno/api?server=:server&type=:type&id=:id&auth=:auth&r=:r", // Meting API 地址
-	id: "17524931991", // 歌单ID
-	server: "netease", // 音乐源服务器。有的meting的api源支持更多平台,一般来说,netease=网易云音乐, tencent=QQ音乐, kugou=酷狗音乐, xiami=虾米音乐, baidu=百度音乐
-	type: "playlist", // 播单类型
+	mode: "local", // 音乐播放器模式，可选 "local" 或 "meting"
+    local: {
+        songs: [
+          {
+              title: "When I Wish Upon A Star",
+              artist: "発熱巫女~ず",
+              url: "/music/When I Wish Upon A Star.mp3", // 相对于 public 文件夹的路径
+              cover: "/music/cover/When I Wish Upon A Star.jpg" // (可选) 歌曲封面
+          },
+          {
+              title: "にっこり記念日",
+              artist: "ノエル(CV.水瀬いのり)",
+              url: "/music/にっこり記念日.mp3",
+              cover: "/music/cover/にっこり記念日.jpg"
+          },
+          {
+              title: "あの光",
+              artist: "乃木坂46;",
+              url: "/music/あの光.mp3",
+              cover: "/music/cover/あの光.jpg"
+          }
+       ]
+    }
 };
 
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
+	enable: true, // 是否启用Footer HTML注入功能
 	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
 	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
 	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
